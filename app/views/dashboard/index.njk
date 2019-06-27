@@ -1,1 +1,4 @@
-<h1>Dashboard</h1>
+{% for category in categories %}
+  <p>{{ category.title }}</p>
+  <p>{{ category.Snippets.length }}</p>
+{% endfor %}
